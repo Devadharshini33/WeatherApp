@@ -1,0 +1,173 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+  }
+  body{
+    /* background-image: url("https://wallpapercave.com/wp/wp4922022.jpg"); */
+
+  }
+  
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .content-overlay {
+    position: relative;
+    z-index: 1;
+    /* Add other styles as needed */
+  }
+  
+  .input {
+    padding: 8px;
+    margin: 8px 0;
+    width: 80%;
+    color: rgb(239, 229, 229);
+  }
+  .input:focus {
+    border: 2px solid #4caf50; /* Border color on focus */
+    outline: none;
+    animation: blink-border 1s infinite; /* Blinking animation */
+  }
+  
+  @keyframes blink-border {
+    0%, 100% {
+      border-color: #4caf50;
+    }
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  .input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+
+    
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #e8e6e6;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#000000;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #000000;	
+}
+.container1 {
+    flex: 1;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 1px;
+    font-weight: bold;
+  }
+  
+  .notcity {
+    flex: 1;
+    width: 100%;
+    background-color: lightcoral;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+  
+  .weatherContainer {
+    flex: 1;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .tempStyle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .button {
+    
+    padding: 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+  .button:hover{
+   
+    color: rgb(74, 74, 74);
+  }
+  
+  .cityName .notCity{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .notCity {
+    font-size: 16px;
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .video{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index:-1;
+  }
+  .weatherContainer {
+    margin-top: 20px;
+  }
+  
+  .temp {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .weatherDescription {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  
